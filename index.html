@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="description" content="">
     <title>Ting's website</title>
     <link rel="icon" href="resources/images/sign.png">
@@ -19,7 +20,7 @@
     <script src="main.js"></script>
     <script src="typing.js"></script>
 </head>
-<body>
+<body onresize="onResize()">
     <header>
         <nav class="nav-bar">
             <ul class="menu-visiable-wide">
@@ -122,27 +123,30 @@
             <img class="modal-content" id="full-image">
         </div>
         <div class="inner-window">
-            <div class="inner-window-left">
-                <label class="left-box-menu">Stage
-                    <input type="radio" checked="checked" name="radio" tag="block-1" onclick="toggleBlocks(this)">
-                    <span class="checkmark">&#10003;</span>
-                </label>
-                <label class="left-box-menu">Millinery
-                    <input type="radio" name="radio" tag="block-2" onclick="toggleBlocks(this)">
-                    <span class="checkmark">&#10003;</span>
-                </label>
-                <label class="left-box-menu">Styling
-                    <input type="radio" name="radio" tag="block-3" onclick="toggleBlocks(this)">
-                    <span class="checkmark">&#10003;</span>
-                </label>
-                <label class="left-box-menu">Metal Jewelry
-                    <input type="radio" name="radio" tag="block-4" onclick="toggleBlocks(this)">
-                    <span class="checkmark">&#10003;</span>
-                </label>
-                <label class="left-box-menu">3D Construction
-                    <input type="radio" name="radio" tag="block-5" onclick="toggleBlocks(this)">
-                    <span class="checkmark">&#10003;</span>
-                </label>
+            <div class="inner-window-top-left">
+                <a class="inner-window-fold-control" onclick="toggleInnerMenu(this)">&#9660; Click to see my other works &#9660;</a>
+                <div class="inner-window-menu" id="inner-menu">
+                    <label class="left-box-menu">Stage
+                        <input type="radio" checked="checked" name="radio" tag="block-1" onclick="toggleBlocks(this)">
+                        <span class="checkmark">&#10003;</span>
+                    </label>
+                    <label class="left-box-menu">Millinery
+                        <input type="radio" name="radio" tag="block-2" onclick="toggleBlocks(this)">
+                        <span class="checkmark">&#10003;</span>
+                    </label>
+                    <label class="left-box-menu">Styling
+                        <input type="radio" name="radio" tag="block-3" onclick="toggleBlocks(this)">
+                        <span class="checkmark">&#10003;</span>
+                    </label>
+                    <label class="left-box-menu">Metal Jewelry
+                        <input type="radio" name="radio" tag="block-4" onclick="toggleBlocks(this)">
+                        <span class="checkmark">&#10003;</span>
+                    </label>
+                    <label class="left-box-menu">3D Construction
+                        <input type="radio" name="radio" tag="block-5" onclick="toggleBlocks(this)">
+                        <span class="checkmark">&#10003;</span>
+                    </label>
+                </div>
             </div>
             <div class="inner-window-right">
                 <div class="left-box-block" id="block-1">

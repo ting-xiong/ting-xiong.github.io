@@ -20,8 +20,8 @@ html {
 body {
     font-family: 'Montserrat';
     margin: 0;
-    -ms-scroll-snap-type: y proximity;
-        scroll-snap-type: y proximity;
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
     overflow-y: scroll;
     scrollbar-width: none;
     height: 100vh;
@@ -660,9 +660,11 @@ header {
 	background-color: #A0A0A050;
 }
 
-.inner-window-left {
-    width: auto;
-    height: 100%;
+.inner-window-top-left {
+    background: #101010B0;
+}
+
+.inner-window-menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -673,11 +675,13 @@ header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    background: #101010B0;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     padding: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .left-box-menu {
@@ -697,19 +701,39 @@ header {
     white-space: nowrap;
 }
 
-@media (max-width: 768px) {
-    .inner-window-left {
-        width: calc(100% - 40px);
-        height: 120px;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    }
+.inner-window-fold-control {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    display: none;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    white-space: nowrap;
+    cursor: pointer;
+}
 
+.inner-window-fold-control:hover {
+    color: #A0A0A0;
+}
+
+@media (max-width: 768px) {
     .inner-window {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
+    }
+
+    .inner-window-fold-control {
+        display: block;
+    }
+
+    #inner-menu {
+        display: none;
     }
 }
 

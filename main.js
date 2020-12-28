@@ -6,6 +6,8 @@ var toggleState = false;
 
 var imagePreviewBlock = 0;
 
+var innerWindowFolded = true;
+
 function isAtPage(page) {
     const delta = document.body.scrollHeight / 3;
     return page * delta <= document.body.scrollTop && (page + 1 ) * delta > document.body.scrollTop;
@@ -146,6 +148,32 @@ function toggleBlocks(input){
             b.style.display = "none";
         }
     });
+}
+
+function toggleInnerMenu(button) {
+    var menu = document.getElementById("inner-menu");
+    if (menu.style.display == "none" || menu.style.display == "") {
+        button.innerHTML = "&#9650; Fold category selection &#9650;";
+        menu.style.display = "block";
+        innerWindowFolded = false;
+    } else {
+        button.innerHTML = "&#9660; Click to see my other works &#9660;";
+        menu.style.display = "none";
+        innerWindowFolded = true;
+    }
+}
+
+function onResize() {
+    var menu = document.getElementById("inner-menu");
+    if (document.body.clientWidth > 768) {
+        menu.style.display = "block";
+    } else {
+        if (innerWindowFolded) {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
 }
 
 $(document).ready(function() {
