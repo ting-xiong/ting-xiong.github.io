@@ -20,8 +20,8 @@ html {
 body {
     font-family: 'Montserrat';
     margin: 0;
-    -ms-scroll-snap-type: y mandatory;
-        scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y proximity;
+        scroll-snap-type: y proximity;
     overflow-y: scroll;
     scrollbar-width: none;
     height: 100vh;
@@ -32,8 +32,8 @@ body::-webkit-scrollbar {
 }
 
 section {
-    padding: 4em;
-    height: calc(100vh - 8em);
+    padding: 64px;
+    height: calc(100vh - 128px);
     color: #101010;
     scroll-snap-align: start;
     position: relative;
@@ -41,17 +41,17 @@ section {
 }
 
 h2 {
-    font-size: 4em;
+    font-size: 64px;
     line-height: normal;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 32px;
     line-height: normal;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 20px;
 }
 
 header {
@@ -64,7 +64,7 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0.4em 10%;
+    padding: 0.64px 10%;
     position: fixed;
     top: 0;
     width: 100%;
@@ -107,7 +107,7 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 2em;
+    margin: 32px;
     width: 100vw;
 }
 
@@ -118,7 +118,7 @@ header {
     padding: 0;
     margin-left: min(calc(5vw - 40px), 20px);
     margin-right: min(calc(5vw - 40px), 20px);
-    margin-bottom: 4em;
+    margin-bottom: 64px;
     width: auto;
     height: 30vh;
     -o-transition: .2s;
@@ -171,8 +171,8 @@ header {
 
 .card button {
     position: absolute;
-    bottom: 1em;
-    right: 1em;
+    bottom: 16px;
+    right: 16px;
     background-color: transparent;
     border: none;
     outline: none;
@@ -208,7 +208,7 @@ header {
 }
 
 .nav-bar {
-    height: 3.4em;
+    height: 54.4px;
 }
 
 .nav-bar a {
@@ -216,9 +216,9 @@ header {
 }
 
 .nav-bar img {
-    height: 3.0em;
-    margin-top: -1.2em;
-    margin-bottom: -1.2em;
+    height: 48px;
+    margin-top: -20px;
+    margin-bottom: -20px;
 }
 
 .nav-bar ul {
@@ -229,7 +229,7 @@ header {
 
 .nav-bar ul li {
     display: inline-block;
-    padding: 0 2em;
+    padding: 0 32px;
     position: relative;
     color: #101010;
     font-weight: bold;
@@ -291,7 +291,7 @@ header {
 }
 
 .drop-down ul li {
-    margin: 1em;
+    margin: 16px;
     display: block;
 }
 
@@ -309,9 +309,9 @@ header {
 .footer {
     position: absolute;
     width: 100%;
-    margin-left: -4em;
+    margin-left: -64px;
     bottom: 0;
-    padding: 0.5em;
+    padding: 8px;
 }
 
 .dark-bg {
@@ -333,7 +333,7 @@ header {
 }
 
 .footer h2 {
-    font-size: 1.2em;
+    font-size: 20px;
     line-height: normal;
     text-align: center;
     margin-top: 0;
@@ -341,7 +341,7 @@ header {
 }
 
 .footer h3 {
-    font-size: 1em;
+    font-size: 16px;
     line-height: normal;
     text-align: center;
     margin-top: 0;
@@ -349,7 +349,7 @@ header {
 }
 
 .footer p {
-    font-size: 0.5em;
+    font-size: 8px;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
@@ -389,14 +389,14 @@ header {
     white-space: nowrap;
     background: #5F0000A0;
     color: white;
-    padding: 0.4em;
-    border-radius: 1em;
+    padding: 0.64px;
+    border-radius: 16px;
     font-weight: bold;
 }
 
 @media (max-width: 768px) {
     .bounder div p {
-        font-size: 0.8em;
+        font-size: 12px;
     }
 }
 
@@ -427,7 +427,7 @@ header {
     -o-transition: 1s;
     transition: 1s;
     margin-left: 0;
-    margin-right: 0.5em;
+    margin-right: 8px;
     line-height: normal;
     margin-top: 0;
     margin-bottom: 0;
@@ -456,8 +456,8 @@ header {
  }
 
 .toggle-items a{
-    margin-left: 1.0em;
-    margin-right: 1.0em;
+    margin-left: 16px;
+    margin-right: 16px;
  }
 
  /* image flexbox */
@@ -468,9 +468,9 @@ header {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    width: calc(95vw - 3em);
-    height: calc(90vh - 3em);
-    top: calc(50vh + 1.5em);
+    width: calc(95vw - 16px);
+    height: calc(90vh - 16px);
+    top: calc(50vh + 16px);
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -487,21 +487,21 @@ header {
 }
 
 .inner-window h2 {
-    font-size: 2em;
+    font-size: 32px;
     line-height: normal;
     font-family: 'Cabin Sketch';
     color: #101010;
     text-align: center;
-    margin: 0.5em;
+    margin: 8px;
 }
 
 .inner-window h3 {
-    font-size: 1.2em;
+    font-size: 20px;
     line-height: normal;
     font-family: 'Cinzel';
     color: darkred;
     text-align: center;
-    margin: 0.5em;
+    margin: 8px;
 }
 
 .grid {
@@ -514,7 +514,7 @@ header {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
-    padding: 0 .5em;
+    padding: 0 8px;
 }
 
 .grid-col--2, .grid-col--3 {
@@ -537,7 +537,7 @@ header {
 
 .image-preview {
     position: relative;
-    margin-bottom: .5em;
+    margin-bottom: 8px;
 }
 
 .image-preview img {
@@ -606,7 +606,7 @@ header {
 #image-viewer .viewer-button {
     position: absolute;
     color: #f1f1f1;
-    font-size: 4em;
+    font-size: 64px;
     font-weight: bold;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
@@ -661,10 +661,8 @@ header {
 }
 
 .inner-window-left {
-    width: 175px;
+    width: auto;
     height: 100%;
-    max-width: 175px;
-    min-width: 175px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -696,16 +694,13 @@ header {
     -ms-user-select: none;
     user-select: none;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
     .inner-window-left {
         width: calc(100% - 40px);
-        max-width: none;
-        min-width: none;
-        height: 65px;
-        max-height: 65px;
-        min-height: 65px;
+        height: 120px;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
     }
@@ -761,7 +756,8 @@ header {
 .inner-window-small {
     width: auto;
     height: auto;
-    top: calc(50% - 4em);
+    min-width: 360px;
+    top: calc(50% - 64px);
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -778,30 +774,30 @@ header {
 }
 
 .inner-window-lower-glass {
-    width: calc(100% - 4em);
+    width: calc(100% - 64px);
     height: 100%;
     background: #FFFFFF50;
-    padding: 2em;
+    padding: 32px;
     text-align: center;
 }
 
 .inner-window-small h2 {
     font-family: 'Cinzel';
-    font-size: 3em;
+    font-size: 48px;
     line-height: normal;
     margin-top: 0;
-    margin-bottom: 1em;
+    margin-bottom: 16px;
     font-weight: bolder;
 }
 
 .inner-window-small h3 {
-    font-size: 1.2em;
+    font-size: 20px;
     line-height: normal;
     margin: 0;
 }
 
 .inner-window-small p {
-    font-size: 0.8em;
+    font-size: 12px;
     line-height: normal;
     margin: 0;
 }

@@ -29,7 +29,7 @@ function loadPage(page) {
 
 function leavePage(page) {
     if (page == 0) {
-        $("#model-buttons").css("visibility", "hidden");
+        // $("#model-buttons").css("visibility", "hidden");
     } else if (page == 1) {
         
     } else if (page == 2) {

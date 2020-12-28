@@ -1,17 +1,17 @@
 .slideshow {
     position: absolute;
     width: 100%;
-    height: calc(100% - 2.2em);
-	top: 2.2em;
+    height: calc(100% - 35.2px);
+	top: 35.2px;
 	background: #101010;;
     left: 0;
     z-index: -2;
 }
 .slideshow span {
     width: 100%;
-    height: calc(100% - 2.2em);
+    height: calc(100% - 35.2px);
     position: absolute;
-    top: 2.2em;
+    top: 35.2px;
     left: 0;
     color: transparent;
     background-size: cover;
