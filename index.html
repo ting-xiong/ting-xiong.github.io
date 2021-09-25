@@ -32,7 +32,7 @@
             <div class="menu-visiable-wide menu-container">
                 <ul>
                     <li class="drop-down-hover">
-                        <a href="/index.html#section-1">Concept</a>
+                        <a href="/index.html#section-1" class="nav-bar-menu">Concept</a>
                         <ul class="drop-down">
                             <hr>
                             <li>
@@ -85,20 +85,52 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="/index.html#section-2">Stage</a></li>
-                    <li><a href="/index.html#section-2">Construction</a></li>
-                    <li><a href="/index.html#section-3">About Me</a></li>
+                    <li class="drop-down-hover">
+                        <a href="/index.html#section-2" class="nav-bar-menu">Stage</a>
+                        <ul class="drop-down">
+                            <hr>
+                            <li>
+                                <a href="/pages/stage-sonder.html">
+                                    <img src="/resources/images/model-s-4-small.png"></img>
+                                    Sonder
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/stage-incubus.html">
+                                    <img src="/resources/images/model-s-2-small.png"></img>
+                                    Incubus
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/stage-blood-and-ink.html">
+                                    <img src="/resources/images/model-s-3-small.png"></img>
+                                    Blood And Ink
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/stage-in-the-height.html">
+                                    <img src="/resources/images/model-s-1-small.png"></img>
+                                    In The Height
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="/index.html#section-3" class="nav-bar-menu">Construction</a></li>
+                    <li><a href="/index.html#section-4" class="nav-bar-menu">About Me</a></li>
                 </ul>
             </div>
             <div class="menu-visiable-narrow menu-container">
                 <ul>
-                    <div id="menu-bar-icon" class="drop-down-hover full-menu-drop-down-hover">
+                    <div id="menu-bar-icon" class="drop-down-hover">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
                             <path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
                         </svg>
                         <ul class="drop-down full-width-menu">
                             <div class="full-width-menu-pad-div"></div>
                             <hr>
+                            <li style="text-decoration: underline;">
+                                Concept:
+                            </li>
                             <li>
                                 <a href="/pages/project-double-sided-pandora.html">
                                     <img src="/resources/images/model-1-0-small.png"></img>
@@ -148,9 +180,36 @@
                                 </a>
                             </li>
                             <hr>
-                            <li><a href="/index.html#section-2">Stage</a></li>
-                            <li><a href="/index.html#section-2">Costume Construction</a></li>
-                            <li><a href="/index.html#section-3">About Me</a></li>
+                            <li style="text-decoration: underline;">
+                                Stage:
+                            </li>
+                            <li>
+                                <a href="/pages/stage-sonder.html">
+                                    <img src="/resources/images/model-s-4-small.png"></img>
+                                    Sonder
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/stage-incubus.html">
+                                    <img src="/resources/images/model-s-2-small.png"></img>
+                                    Incubus
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/stage-blood-and-ink.html">
+                                    <img src="/resources/images/model-s-3-small.png"></img>
+                                    Blood And Ink
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pages/stage-in-the-height.html">
+                                    <img src="/resources/images/model-s-1-small.png"></img>
+                                    In The Height
+                                </a>
+                            </li>
+                            <hr>
+                            <li><a href="/index.html#section-3">Costume Construction</a></li>
+                            <li><a href="/index.html#section-4">About Me</a></li>
                         </ul>
                     </div>
                 </ul>
@@ -254,82 +313,79 @@
     </section>
     <section id="section-2">
         <img class="bk-image" src="resources/images/sketch.jpg">
-        <div id="image-viewer">
-            <span class="viewer-button" id="close">&times;</span>
-            <span class="viewer-button" id="left">&lt;</span>
-            <span class="viewer-button" id="right">&gt;</span>
-            <img class="modal-content" id="full-image">
+        <style scoped>
+            @import "grid_gallery.css";
+        </style>
+        <div class="inner-window">
+            <div class="inner-window-right">
+                <h2>Stage Projects</h2>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img class="gallery-image" src="resources/images/sonder/IMG_2018.jpg" onclick="location.href='/pages/stage-sonder.html';">
+                        </div>
+                        <p>Sonder</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img class="gallery-image" src="resources/images/incubus/IMG_8208.jpeg" onclick="location.href='/pages/stage-incubus.html';">
+                        </div>
+                        <p>Incubus</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img class="gallery-image" src="resources/images/blood-and-ink/IMG_3181.JPG" onclick="location.href='/pages/stage-blood-and-ink.html';">
+                        </div>
+                        <p>Blood And Ink</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="image-container">
+                            <img class="gallery-image" src="resources/images/in-the-heights/IMG_0691.jpg" onclick="location.href='/pages/stage-in-the-height.html';">
+                        </div>
+                        <p>In The Heights</p>
+                    </div>
+                    <div class="ghost-item"></div>
+                    <div class="ghost-item"></div>
+                    <div class="ghost-item"></div>
+                    <div class="ghost-item"></div>
+                    <div class="ghost-item"></div>
+                    <div class="ghost-item"></div>
+                    <div class="ghost-item"></div>
+                </div>
+            </div>
         </div>
+        <div class="footer">
+            <a href="#section-3">
+                <h2>Scroll Down  &#10164;</h2>
+            </a>
+        </div>
+    </section>
+    <section id="section-3">
+        <img class="bk-image" src="resources/images/sketch.jpg">
         <div class="inner-window">
             <div class="inner-window-top-left">
                 <a class="inner-window-fold-control" onclick="toggleInnerMenu(this)">&#9650; Fold category selection &#9650;</a>
                 <div class="inner-window-menu" id="inner-menu" style="visibility: visible; /*improtant!*/">
-                    <label class="left-box-menu">Stage
+                    <label class="left-box-menu">Millinery
                         <input type="radio" checked="checked" name="radio" tag="block-1" onclick="toggleBlocks(this)">
                         <span class="checkmark">&#10003;</span>
                     </label>
-                    <label class="left-box-menu">Millinery
+                    <label class="left-box-menu">Styling
                         <input type="radio" name="radio" tag="block-2" onclick="toggleBlocks(this)">
                         <span class="checkmark">&#10003;</span>
                     </label>
-                    <label class="left-box-menu">Styling
+                    <label class="left-box-menu">Metal Jewelry
                         <input type="radio" name="radio" tag="block-3" onclick="toggleBlocks(this)">
                         <span class="checkmark">&#10003;</span>
                     </label>
-                    <label class="left-box-menu">Metal Jewelry
-                        <input type="radio" name="radio" tag="block-4" onclick="toggleBlocks(this)">
-                        <span class="checkmark">&#10003;</span>
-                    </label>
                     <label class="left-box-menu">3D Construction
-                        <input type="radio" name="radio" tag="block-5" onclick="toggleBlocks(this)">
+                        <input type="radio" name="radio" tag="block-4" onclick="toggleBlocks(this)">
                         <span class="checkmark">&#10003;</span>
                     </label>
                 </div>
             </div>
             <div class="inner-window-right">
                 <div class="left-box-block" id="block-1">
-                    <h2>Stage</h2>
-                    <h3>Incubus</h3>
-                    <div class="grid cg-1" images='{"images": [
-                        "resources/images/miscellaneous/incubus/IMG_8208.jpeg",
-                        "resources/images/miscellaneous/incubus/IMG_9891.JPG",
-                        "resources/images/miscellaneous/incubus/DSC03870.JPG",
-                        "resources/images/miscellaneous/incubus/ss-1.jpg",
-                        "resources/images/miscellaneous/incubus/IMG_9889.JPG",
-                        "resources/images/miscellaneous/incubus/IMG_9890.JPG",
-                        "resources/images/miscellaneous/incubus/DSC03867.JPG",
-                        "resources/images/miscellaneous/incubus/ss-2.jpg"]}' index="1">
-                    </div>
-                    <h3>Blood And Ink</h3>
-                    <div class="grid cg-2" images='{"images": [
-                        "resources/images/miscellaneous/blood-and-ink/IMG_0056.jpg",
-                        "resources/images/miscellaneous/blood-and-ink/IMG_3179.JPG",
-                        "resources/images/miscellaneous/blood-and-ink/IMG_3181.JPG",
-                        "resources/images/miscellaneous/blood-and-ink/IMG_3182.JPG",
-                        "resources/images/miscellaneous/blood-and-ink/IMG_3184.JPG",
-                        "resources/images/miscellaneous/blood-and-ink/IMG_3186.JPG"]}' index="2">
-                    </div>
-                    <h3>In The Height</h3>
-                    <div class="grid cg-3" images='{"images": [
-                        "resources/images/miscellaneous/in-the-height/IMG_0722.jpg",
-                        "resources/images/miscellaneous/in-the-height/IMG_0724.jpg",
-                        "resources/images/miscellaneous/in-the-height/IMG_0761.jpg",
-                        "resources/images/miscellaneous/in-the-height/IMG_0811.jpg",
-                        "resources/images/miscellaneous/in-the-height/IMG_0814.jpg",
-                        "resources/images/miscellaneous/in-the-height/ss-1.jpg",
-                        "resources/images/miscellaneous/in-the-height/ss-3.jpg",
-                        "resources/images/miscellaneous/in-the-height/ss-4.jpg",
-                        "resources/images/miscellaneous/in-the-height/ss-5.jpg",
-                        "resources/images/miscellaneous/in-the-height/ss-6.jpg",
-                        "resources/images/miscellaneous/in-the-height/ss-7.jpg",
-                        "resources/images/miscellaneous/in-the-height/ss-8.jpg",
-                        "resources/images/miscellaneous/in-the-height/ss-9.jpg",
-                        "resources/images/miscellaneous/in-the-height/ss-10.jpg",
-                        "resources/images/miscellaneous/in-the-height/ss-11.jpg",
-                        "resources/images/miscellaneous/in-the-height/ss-12.jpg"]}' index="3">
-                    </div>
-                </div>
-                <div class="left-box-block" id="block-2">
                     <h2>Millinery</h2>
                     <div class="grid cg-4" images='{"images": [
                         "resources/images/miscellaneous/millinery/20200919_124438.jpeg",
@@ -344,7 +400,7 @@
                         "resources/images/miscellaneous/millinery/20201122_125421.jpg"]}' index="4">
                     </div>
                 </div>
-                <div class="left-box-block" id="block-3">
+                <div class="left-box-block" id="block-2">
                     <h2>Styling</h2>
                     <div class="grid cg-5" images='{"images": [
                         "resources/images/miscellaneous/styling/4D19DC67-F510-4B07-B601-2C855F8F558F-1676-00000130522E2498.jpeg",
@@ -358,7 +414,7 @@
                         "resources/images/miscellaneous/styling/zRwH8ObJgBvEcDrS7DRvkY6iHNhCGO1nRTFn6S8gGF0.jpeg"]}' index="5">
                     </div>
                 </div>
-                <div class="left-box-block" id="block-4">
+                <div class="left-box-block" id="block-3">
                     <h2>Metal Jewelry</h2>
                     <div class="grid cg-6" images='{"images": [
                         "resources/images/miscellaneous/metal-jewelry/IMG_6283.JPG",
@@ -368,7 +424,7 @@
                         "resources/images/miscellaneous/metal-jewelry/IMG_6299.JPG"]}' index="6">
                     </div>
                 </div>
-                <div class="left-box-block" id="block-5">
+                <div class="left-box-block" id="block-4">
                     <h2>3D Construction</h2>
                     <div class="grid cg-7" images='{"images": [
                         "resources/images/miscellaneous/3d-construction/20201027_114541.jpg",
@@ -389,12 +445,12 @@
             </div>
         </div>   
         <div class="footer">
-            <a href="#section-3">
+            <a href="#section-4">
                 <h2>Scroll Down  &#10164;</h2>
             </a>
         </div>
     </section>
-    <section id="section-3">
+    <section id="section-4">
         <img class="bk-image" src="resources/images/photo-wall.jpg">
         <div class="inner-window-small">
             <div class="inner-window-lower-glass">
@@ -416,5 +472,11 @@
             <p>Made with ❤ by Caili</p>
         </div>
     </section>
+    <div id="image-viewer">
+        <span class="viewer-button" id="close">&times;</span>
+        <span class="viewer-button" id="left">&lt;</span>
+        <span class="viewer-button" id="right">&gt;</span>
+        <img class="modal-content" id="full-image">
+    </div>
 </body>
 </html>
