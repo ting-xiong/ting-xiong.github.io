@@ -49,6 +49,7 @@ header {
 
 .nav-bar .menu-container {
     width: fit-content;
+    z-index: 1;
 }
 
 .menu-container ul {
