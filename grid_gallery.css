@@ -4,7 +4,7 @@
 }
 
 .gallery-item {
-	flex: 1 0 400px;
+	flex: 1 1 400px;
 	margin: 10px;
 	overflow: hidden;
 }
@@ -23,7 +23,7 @@
 }
 
 .ghost-item {
-	flex: 1 0 400px;
+	flex: 1 0 200px;
 	margin: 0px;
 	height: 0;
   background-color: transparent;

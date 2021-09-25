@@ -352,7 +352,6 @@ p {
 .footer {
     position: absolute;
     width: 100%;
-    margin-left: -64px;
     bottom: 0;
     padding: 8px;
 }
