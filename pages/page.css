@@ -39,17 +39,21 @@ header {
 
 .nav-bar {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar > div {
+    width: fit-content;
 }
 
 .nav-bar .menu-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    width: 100%;
+    width: fit-content;
 }
 
 .menu-container ul {
     margin: 0 15px;
+    height: 64px;
 }
 
 .menu-container img {
@@ -58,16 +62,17 @@ header {
 
 .nav-bar a {
     text-decoration: none;
+    font-family: 'Roboto Condensed';
+    color: #202020;
+    font-size: 26px;
+    font-weight: 400;
 }
 
 .nav-bar img {
-    height: 48px;
+    height: 56px;
     margin-top: 0;
     margin-bottom: 0;
-}
-
-.nav-bar div {
-    width: 100%;
+    margin-left: 20px;
 }
 
 .nav-bar ul {
@@ -82,10 +87,8 @@ header {
 .nav-bar ul li {
     display: flex;
     align-items: stretch;
-    padding: 0 10px;
+    padding: 0 20px 0 0;
     position: relative;
-    color: #101010;
-    font-weight: bold;
     white-space: nowrap;
 }
 
@@ -93,9 +96,7 @@ header {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    color: #101010;
     text-decoration: none;
-    font-weight: bold;
     white-space: nowrap;
     display: flex;
     align-items: center;
@@ -109,19 +110,18 @@ header {
 .menu-visiable-narrow {
     visibility: hidden;
     display: none;
-    margin-top: -52px;
 }
 
 #menu-bar-icon {
     display: block;
     margin: 0 15px;
     cursor: pointer;
-    height: 52px;
+    height: 56px;
 }
 
 #menu-bar-icon svg {
     display: block;
-    height: 52px;
+    height: 56px;
 }
 
 .drop-down {
@@ -130,10 +130,9 @@ header {
     position: absolute;
     left: 0;
     right: 0;
-    top: 52px;
+    top: 64px;
     background: #f9f9f9;
-    height: 0;
-    width: 300px;
+    width: 340px;
     opacity: 0;
     transition: all .2s ease;
     -webkit-box-shadow: 3px 3px 5px #A0A0A0;
@@ -146,13 +145,13 @@ header {
 
 .drop-down-hover:hover ul {
     visibility: visible !important;
-    height: 450px;
+    height: calc(8 * 2.5 * 26px);
     opacity: 1;
     transform: translateY(0);
 }
   
 .full-menu-drop-down-hover:hover ul {
-    height: 510px !important;
+    height: calc(9.8 * 2.5 * 26px) !important;
 }
 
 .drop-down li {
@@ -167,10 +166,10 @@ header {
 .full-width-menu-pad-div {
     display: block;
     position: absolute;
-    top: -52px;
-    left: 120px;
+    top: -64px;
+    left: 260px;
     width: 100%;
-    height: 52px;
+    height: 64px;
 }
 
 @media (max-width: 768px) {
