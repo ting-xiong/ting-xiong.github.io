@@ -1,0 +1,10 @@
+{
+  "owner": "ting-xiong",
+  "repo": "ting-xiong.github.io",
+  "branch": "master",
+  "categories": [
+    { "id": "concept", "label": "Concept" },
+    { "id": "stage", "label": "Stage" },
+    { "id": "construction", "label": "Costume Construction" }
+  ]
+}
