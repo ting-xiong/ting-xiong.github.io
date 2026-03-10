@@ -1,6 +1,8 @@
 <template>
-  <main class="project-page">
-    <div class="project-header">
+  <div class="project-layout">
+    <ProjectSidebar />
+    <main class="project-page">
+      <div class="project-header">
       <a href="#" class="back-link" @click.prevent="goBack">&larr; Back to Portfolio</a>
       <h1 class="project-title">{{ projectMeta?.title }}</h1>
       <p v-if="projectMeta?.subtitle" class="project-subtitle">
@@ -8,8 +10,9 @@
       </p>
       <div class="title-divider"></div>
     </div>
-    <ImageGallery :images="imageUrls" @retry="loadImages" />
-  </main>
+      <ImageGallery :images="imageUrls" @retry="loadImages" />
+    </main>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -18,6 +21,7 @@ import { useRoute, useRouter } from 'vue-router'
 import { getManifest, listProjectImages } from '../services/github'
 import type { ProjectMeta } from '../types'
 import ImageGallery from '../components/ImageGallery.vue'
+import ProjectSidebar from '../components/ProjectSidebar.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -65,9 +69,24 @@ async function goBack() {
 </script>
 
 <style scoped>
+.project-layout {
+  display: flex;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .project-page {
+  flex: 1;
   padding-top: 70px;
   min-height: 100vh;
+  min-width: 0;
+}
+
+@media (max-width: 768px) {
+  .project-page {
+    padding-top: 195px; /* navbar 70px + sidebar ~120px */
+  }
 }
 
 .project-header {
