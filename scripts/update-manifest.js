@@ -78,8 +78,8 @@ async function main() {
     branch: 'master',
     heroImages: scannedHero,
     categories: [
-      { id: 'concept', label: 'Concept' },
       { id: 'stage', label: 'Stage' },
+      { id: 'concept', label: 'Concept' },
       { id: 'construction', label: 'Costume Construction' },
     ],
   }

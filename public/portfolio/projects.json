@@ -9,12 +9,12 @@
   ],
   "categories": [
     {
-      "id": "concept",
-      "label": "Concept"
-    },
-    {
       "id": "stage",
       "label": "Stage"
+    },
+    {
+      "id": "concept",
+      "label": "Concept"
     },
     {
       "id": "construction",

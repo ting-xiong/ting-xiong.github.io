@@ -50,7 +50,7 @@ onUnmounted(() => {
 })
 
 function scrollDown() {
-  const firstSection = document.getElementById('concept')
+  const firstSection = document.getElementById('stage')
   if (firstSection) {
     firstSection.scrollIntoView({ behavior: 'smooth' })
   }

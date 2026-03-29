@@ -45,8 +45,8 @@ onMounted(async () => {
     categories.value = manifest.categories
   } catch {
     categories.value = [
-      { id: 'concept', label: 'Concept' },
       { id: 'stage', label: 'Stage' },
+      { id: 'concept', label: 'Concept' },
       { id: 'construction', label: 'Costume Construction' },
     ]
   }
